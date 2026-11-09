@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Door | Discover Your Next Opportunity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        Opportunity Door
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#opportunities">Explore</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+
+            <h1>Discover opportunities.<br>
+                <span>Open doors.</span>
+            </h1>
+
+            <p class="hero-description">
+                Find scholarships, internships, research programs,
+                volunteering, competitions, and more — all in one place.
+            </p>
+
+            <a href="#opportunities" class="primary-button">
+                Explore Opportunities →
+            </a>
+        </div>
+
+        <div class="hero-decoration">
+            <div class="door-symbol">↗</div>
+            <p>New possibilities await.</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Explore by category</h2>
+
+        <div class="category-grid">
+            <button class="category-card" data-category="scholarships">
+                🎓 <span>Scholarships</span>
+            </button>
+
+            <button class="category-card" data-category="internships">
+                💼 <span>Internships & Jobs</span>
+            </button>
+
+            <button class="category-card" data-category="research">
+                🔬 <span>Research</span>
+            </button>
+
+            <button class="category-card" data-category="volunteering">
+                💛 <span>Volunteering</span>
+            </button>
+
+            <button class="category-card" data-category="competitions">
+                🏆 <span>Competitions</span>
+            </button>
+
+            <button class="category-card" data-category="leadership">
+                🌟 <span>Leadership</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="opportunities-section" id="opportunities">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">FIND YOUR NEXT STEP</p>
+                <h2>Explore opportunities</h2>
+                <p class="section-subtitle">
+                    Opportunities designed for high school students.
+                </p>
+            </div>
+
+            <p id="results-count"></p>
+        </div>
+
+        <div class="search-area">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search opportunities, organizations, keywords..."
+            >
+        </div>
+
+        <div class="filter-panel">
+
+            <div class="filter-heading">
+                <div>
+                    <h3>Find your match</h3>
+                    <p>Use the filters to narrow down your search.</p>
+                </div>
+
+                <button id="clear-filters" class="clear-button">
+                    Clear filters ↺
+                </button>
+            </div>
+
+            <div class="filter-grid">
+
+                <div class="filter-group">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter">
+                        <option value="all">All categories</option>
+                        <option value="scholarships">Scholarships</option>
+                        <option value="internships">Internships & Jobs</option>
+                        <option value="research">Research</option>
+                        <option value="volunteering">Volunteering</option>
+                        <option value="competitions">Competitions</option>
+                        <option value="leadership">Leadership</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="state-filter">Location / State</label>
+                    <select id="state-filter">
+                        <option value="all">Anywhere</option>
+                        <option value="Nationwide">Nationwide</option>
+                        <option value="International">International</option>
+                        <option disabled>──────────</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="cost-filter">Cost / Funding</label>
+                    <select id="cost-filter">
+                        <option value="all">Any cost</option>
+                        <option value="free">Free</option>
+                        <option value="paid">Paid</option>
+                        <option value="stipend">Stipend provided</option>
+                        <option value="funded">Fully funded</option>
+                        <option value="unknown">Cost not specified</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="format-filter">Format</label>
+                    <select id="format-filter">
+                        <option value="all">Any format</option>
+                        <option value="online">Online</option>
+                        <option value="in-person">In-person</option>
+                        <option value="hybrid">Hybrid</option>
+                        <option value="varies">Varies / not specified</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="grade-filter">Grade level</label>
+                    <select id="grade-filter">
+                        <option value="all">All high school grades</option>
+                        <option value="9">9th grade</option>
+                        <option value="10">10th grade</option>
+                        <option value="11">11th grade</option>
+                        <option value="12">12th grade</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="deadline-filter">Deadline</label>
+                    <select id="deadline-filter">
+                        <option value="all">Any deadline</option>
+                        <option value="30">Within 30 days</option>
+                        <option value="90">Within 90 days</option>
+                        <option value="none">No date listed</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="opportunity-list" class="opportunity-grid">
+        </div>
+
+    </section>
+
+    <section class="about-section" id="about">
+        <p class="eyebrow">ABOUT US</p>
+        <h2>Every student deserves the chance to discover.</h2>
+
+        <p>
+            Opportunity Door makes educational, professional, and
+            extracurricular opportunities easier for students to find.
+            We bring opportunities together so students can spend less
+            time searching and more time exploring.
+        </p>
+
+        <p class="tagline">Discover. Explore. Open Doors.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Opportunity Door. Discover. Explore. Open Doors.</p>
+</footer>
+
+<script src="opportunities.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
